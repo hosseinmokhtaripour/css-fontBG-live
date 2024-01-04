@@ -1,0 +1,34 @@
+body{
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #21252B;
+}
+.background-text{
+  font-family: Arial Black;
+  font-size: 240px;
+  letter-spacing: 20px;
+  line-height: 280px;
+  text-align: center;
+
+  color: transparent;
+  background-clip: text;
+
+  background-image: url(background.jpg);
+  background-size: 120%;
+
+  animation: bg-live 30s cubic-bezier(.56,.25,.45,.83) infinite;
+}
+@keyframes bg-live {
+  0%{
+    background-position: 0% 0%;
+  }
+  50%{
+    background-position: 100% 100%;
+  }
+  100%{
+    background-position: 0% 0%;
+  }
+}
